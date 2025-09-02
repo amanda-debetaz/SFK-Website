@@ -2,7 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Sports For Kids is a student-led organization at Texas A&M University
+       that hosts activities and events for the children of Bryan/College Station."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/SFK-favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,20 +19,52 @@
       href="https://fonts.googleapis.com/css2?family=Jua&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>SFK</title>
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/faq-style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <title>SFK &mdash; Sports For Kids</title>
   </head>
   <body>
     <header class="header">
       <p class="logo-date">SFK <span>Est. 2000</span></p>
-      <nav class="nav"></nav>
-      <ul class="nav-list">
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#" class="nav-link">Exec Team</a></li>
-        <li><a href="#" class="nav-link">Committees</a></li>
-        <li><a href="#" class="nav-link">FAQ's</a></li>
-        <li><a href="#" class="nav-link nav-cta">Sign up!</a></li>
-      </ul>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about-page.html" class="nav-link">About Us</a></li>
+          <li>
+            <a href="events-page.html" class="nav-link">Upcoming Events</a>
+          </li>
+          <li><a href="faq-page.html" class="nav-link">FAQ's</a></li>
+          <li>
+            <a href="index.html#signup" class="nav-link nav-cta btn-signup"
+              >Sign up!</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -45,8 +86,288 @@
             class="hero-img hero-img--2"
             alt="College athletes playing tug of tug-of-war"
           />
+          <img
+            src="img/illustrations/baseball-drawing-removebg-preview.png"
+            class="hero-drawing hero-drawing--1"
+            alt="Line drawing of a baseball player"
+          />
+          <img
+            src="img/illustrations/soccer-drawing-removebg-preview.png"
+            class="hero-drawing hero-drawing--2"
+            alt="Line drawing of a soccer player"
+          />
+        </div>
+      </section>
+
+      <section class="section-kids-committees" id="kids-events">
+        <div class="container">
+          <span class="subheading">Events</span>
+          <h2 class="secondary-heading">For the Kids</h2>
+        </div>
+
+        <div class="container kids-grid">
+          <div class="kids-img-box">
+            <img
+              src="img/members-and-kids.jpg"
+              class="kids-img"
+              alt="Group of college students and kids at a baseball game"
+            />
+          </div>
+          <div class="kids-text-box">
+            <p class="kids-committee">Show & Tell</p>
+            <p class="kids-committee-description">
+              Giving kids the opportunity to go to two A&M sporting events each
+              semester. Bring your kid to the drop off location and let us take
+              care of the rest!
+            </p>
+            <!-- <a href="#" class="btn-learn-more">Learn more &rarr;</a> -->
+          </div>
+
+          <div class="kids-text-box">
+            <p class="kids-committee">Sports Fest</p>
+            <p class="kids-committee-description">
+              A special event at the end of each semester where A&M athletes
+              come out to play along with the kids. Kids get a unique
+              opportunity to play different sports with the top players of each
+              sport!
+            </p>
+            <!-- <a href="#" class="btn-learn-more btn--left">Learn more &rarr;</a> -->
+          </div>
+          <div class="kids-img-box">
+            <img
+              src="img/sportsFest/sports-fest-gym-2.jpg"
+              class="kids-img square-img"
+              alt="College tennis players teaching kids tennis"
+            />
+          </div>
+
+          <div class="kids-img-box">
+            <img
+              src="img/sportsSaturday/sports-saturday-3.jpg"
+              class="kids-img"
+              alt="Group of college students watching kids play tug-of-war"
+            />
+          </div>
+          <div class="kids-text-box">
+            <p class="kids-committee">Sports Saturday</p>
+            <p class="kids-committee-description">
+              Fun-filled Saturdays for the kids to get active and play a variety
+              of games and sports. Tug-of-war and 4 square are just a couple of
+              our favorites!
+            </p>
+            <!-- <a href="#" class="btn-learn-more">Learn more &rarr;</a> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section-members-committees">
+        <div class="container">
+          <span class="subheading">Events</span>
+          <h2 class="secondary-heading">Member Focused</h2>
+        </div>
+        <div class="container members-layout">
+          <div class="container committee-box box--1">
+            <div class="members-text-box">
+              <p class="members-committee">Socials</p>
+              <p class="members-committee-description">
+                Events throughout the semester to hangout with other members of
+                the org. Past socials are pumpkin carving, s'mores night, Lake
+                Bryan social, and so many more!
+              </p>
+            </div>
+            <img
+              src="img/socials/social-trivia.jpg"
+              alt="Group of young adults playing trivia"
+              class="members-committee-img"
+            />
+          </div>
+          <div class="container committee-box box--2">
+            <div class="members-text-box">
+              <p class="members-committee">Intramurals</p>
+              <p class="members-committee-description">
+                Name an intramural sport and we have a team for it! No org
+                compares to SFK in our number of sports nor our strong record of
+                wins!
+              </p>
+            </div>
+            <img
+              src="img/intramurals/intramural-softball-1.jpg"
+              alt="Group of young adults getting 1st place in a softball league"
+              class="members-committee-img member-img--2"
+            />
+          </div>
+          <div class="container committee-box box--3">
+            <div class="members-text-box">
+              <p class="members-committee">Fundraising</p>
+              <p class="members-committee-description">
+                Funding the org with lots of merch options and profit shares.
+                You get to eat chipotle and SFK gets a portion of the cost! Eat
+                a burrito for the kids!
+              </p>
+            </div>
+            <img
+              src="img/fundraising/fundraising-chipolte.JPEG"
+              alt="Group of young adults at chipolte"
+              class="members-committee-img"
+            />
+          </div>
+        </div>
+        <div class="members-drawings">
+          <img
+            src="img/illustrations/group-drawing.png"
+            alt="group of people with their hands in the middle"
+            class="members-drawings member-drawing-1"
+          />
+          <img
+            src="img/illustrations/trophy-drawing.png"
+            alt="hand holding up a trophy"
+            class="members-drawings member-drawing-2"
+          />
+        </div>
+      </section>
+
+      <section class="section-cta" id="signup">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="secondary-heading">Join our email list today!</h2>
+              <p class="cta-text">
+                Stay updated on all our upcoming events to ensure your kid never
+                misses the fun. No spam, just event dates, locations, and signup
+                details.
+              </p>
+
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="parent-name">Parent Name</label>
+                  <input
+                    id="parent-name"
+                    type="text"
+                    placeholder="John Smith"
+                    name="parent-name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+                <div>
+                  <label for="kids">How many kids?</label>
+                  <input
+                    type="number"
+                    id="kids"
+                    name="kids"
+                    min="1"
+                    max="5"
+                    required
+                  />
+                </div>
+                <div id="children-names"></div>
+
+                <button class="form-btn">Join now</button>
+              </form>
+            </div>
+            <div class="cta-img-box">
+              <img
+                src="img/email-drawing.png"
+                alt="Line drawing of a paper letter"
+                class="cta-img"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
+    <section class="section-footer">
+      <div class="container grid--footer">
+        <div class="logo-col">
+          <img
+            src="img/student-organization-logo-removebg.png"
+            alt="Texas A&M recognized student organization logo"
+            class="footer-img"
+          />
+
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://www.instagram.com/sfk_tamu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                class="footer-link"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/people/Sports-For-Kids-TAMU/61580137073956/?sk=about_profile_transparency"
+                class="footer-link"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Sports For Kids.
+            All programs are 100% free for families.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">400 Bizzell St., College Station, TX 77843</p>
+            <p>
+              <a href="tel:972-576-6898" class="footer-link">972-576-6898</a
+              ><br />
+              <a href="mailto:sfktamu@gmail.com" class="footer-link"
+                >sfktamu@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Pages</p>
+          <ul class="footer-nav">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about-page.html" class="footer-link">About Us</a></li>
+            <li>
+              <a href="events-page.html" class="footer-link">Upcoming Events</a>
+            </li>
+            <li><a href="faq-page.html" class="footer-link">FAQ's</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <script>
+      const kidsInput = document.getElementById("kids");
+      const childrenDiv = document.getElementById("children-names");
+
+      kidsInput.addEventListener("input", function () {
+        childrenDiv.innerHTML = ""; // clear old fields
+        const num = parseInt(this.value, 5);
+        if (isNaN(num) || num <= 0) return;
+
+        for (let i = 1; i <= num; i++) {
+          const label = document.createElement("label");
+          label.setAttribute("for", "child" + i);
+          label.textContent = "Child " + i + " Name";
+
+          const input = document.createElement("input");
+          input.type = "text";
+          input.id = "child" + i;
+          input.name = "child" + i;
+
+          childrenDiv.appendChild(label);
+          childrenDiv.appendChild(input);
+        }
+      });
+    </script>
   </body>
 </html>
